@@ -1,4 +1,19 @@
 /* body */
-
+body {
+	text-align: center;
+	font-family: Verdana, sans-serif;
+}
 
 /* board */
+#board {
+	margin: auto;
+	width: 550px;
+	height: 550px;
+}
+
+.box {
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #000000;
+}
