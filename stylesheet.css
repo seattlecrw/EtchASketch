@@ -5,8 +5,16 @@ body {
 }
 
 /* board */
+.btn {
+	margin-top: 10px;
+	padding: 2px 4px;
+	background-color: #0066FF;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
 #board {
-	margin: auto;
+	margin: 10px auto;
 	width: 550px;
 	height: 550px;
 }

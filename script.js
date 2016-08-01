@@ -14,7 +14,7 @@ $(document).ready(function() {
 	}
 	render(num_squares);
 
-	// Create random color generator
+	// create random color generator
 	var random_color_generate = function() {
 		var max_hex = parseInt('FFFFFF', 16);
 		var random_choice = Math.floor(Math.random() * max_hex);
@@ -22,12 +22,18 @@ $(document).ready(function() {
 		return '#' + hexString;
 	};
 
-	// Create hover effect to change box colors
+	// create hover effect to change box colors
 	$('.box').hover(function() {
 		var new_color = random_color_generate();
 		$(this).css('background-color', new_color);
 		$(this).css('border', '1px solid #FFFFFF')
     }, function() {
     	$(this).css('border', '1px solid #000000')
+    });
+
+    // implement button that changes number of squares in grid
+    $('button').click(function() {
+    	var new_number = prompt("How many squares would you like per side?");
+    	render(new_number);
     });
 });
